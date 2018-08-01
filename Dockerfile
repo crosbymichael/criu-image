@@ -36,6 +36,5 @@ FROM scratch
 
 COPY --from=build /usr/local/sbin/criu /bin/
 COPY --from=build /usr/lib/x86_64-linux-gnu/libprotobuf-c.so.1 /lib/
-COPY --from=build /lib/x86_64-linux-gnu/libdl.so.2 /lib/
 COPY --from=build /lib/x86_64-linux-gnu/libnl-3.so.200 /lib/
 COPY --from=build /usr/lib/x86_64-linux-gnu/libnet.so.1 /lib/
