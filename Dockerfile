@@ -1,4 +1,4 @@
-FROM golang:1.10.3-stretch as build
+FROM ubuntu:18.04 as build
 
 RUN apt-get update && apt-get install -y \
     build-essential \
